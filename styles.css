@@ -55,7 +55,7 @@ section {
   padding: 100px 10%;
 }
 
-/* Hero Section */
+
 .hero {
   display: flex;
   justify-content: center;
@@ -195,7 +195,7 @@ section {
   transform: scale(1.1);
 }
 
-/* About Section */
+
 .about {
   display: flex;
   justify-content: center;
@@ -247,7 +247,7 @@ section {
   color: #cbd5e1;
 }
 
-/* Skills Section */
+
 .skills {
   text-align: center;
 }
@@ -279,7 +279,7 @@ section {
   border-color: #38bdf8;
 }
 
-/* Projects Section */
+
 .projects {
   padding: 60px 10%;
   text-align: center;
@@ -319,7 +319,7 @@ section {
   margin-bottom: 12px;
 }
 
-/* Contact Section */
+
 .contact {
   text-align: center;
 }
@@ -373,7 +373,7 @@ footer {
   color: #64748b;
 }
 
-/* Keyframe Animations */
+
 @keyframes slideIn {
   to {
     opacity: 1;
@@ -388,7 +388,7 @@ footer {
   }
 }
 
-/* Responsive Media Queries */
+
 @media screen and (max-width: 900px) {
   .hero-container {
     flex-direction: column-reverse;
