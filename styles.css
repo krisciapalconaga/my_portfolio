@@ -5,7 +5,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Dark gradient background for the overall page */
 body {
   background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
   color: #f8fafc;
@@ -72,6 +71,7 @@ section {
   max-width: 1200px;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
   gap: 50px;
 }
 
@@ -105,6 +105,10 @@ section {
   color: #cbd5e1;
 }
 
+.hero-buttons {
+  margin-bottom: 20px;
+}
+
 .hero-buttons .btn {
   padding: 12px 25px;
   margin-right: 15px;
@@ -134,7 +138,6 @@ section {
 }
 
 .social-icons {
-  margin-top: 20px;
   display: flex;
   gap: 15px;
 }
@@ -192,7 +195,7 @@ section {
   transform: scale(1.1);
 }
 
-
+/* About Section */
 .about {
   display: flex;
   justify-content: center;
@@ -211,7 +214,12 @@ section {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: translateY(50px);
-  animation: fadeUp 1s ease forwards;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.about-container.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-container h2 {
@@ -306,6 +314,9 @@ section {
 .project-card img {
   width: 100%;
   border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 12px;
 }
 
 /* Contact Section */
@@ -348,6 +359,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -376,13 +388,6 @@ footer {
   }
 }
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Responsive Media Queries */
 @media screen and (max-width: 900px) {
   .hero-container {
@@ -400,11 +405,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .nav-links {
     display: none;
   }
